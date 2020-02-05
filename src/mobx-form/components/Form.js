@@ -3,7 +3,7 @@ import React from 'react'
 
 const Form = observer(({ children, form, ...props }) => {
   return (
-    <Provider {...form.form}>
+    <Provider {...form}>
       <form {...props}>{children}</form>
     </Provider>
   )

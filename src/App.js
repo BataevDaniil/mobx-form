@@ -71,7 +71,7 @@ const FieldArrayRender = observer(({ path, field: { push, pop, value } }) => {
 
 const App = () => {
   return (
-    <Form form={form} onSubmit={event => event.preventDefault()}>
+    <Form form={form.form} onSubmit={event => event.preventDefault()}>
       <Field name="name1" component={Input} />
       <Field name="name2" type="checkbox" component="input" />
       <Field path={form => form.nameArray} component={FieldArrayRender} />
