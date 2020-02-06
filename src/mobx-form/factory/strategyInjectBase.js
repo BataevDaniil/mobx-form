@@ -6,7 +6,7 @@ const strategyInjectBase = form => {
         field[key] = form[key]
       }
     })
-    field.injectedFields()
+    field.injectedFields && field.injectedFields()
   })
 }
 

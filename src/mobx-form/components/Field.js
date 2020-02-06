@@ -31,7 +31,10 @@ const Field = observer(
       value: field.constructor.mapToField?.(field.value),
       form,
       field,
-      path,
+      ...((typeof path == 'number' || typeof path === 'string') &&
+      typeof component === 'string'
+        ? { path }
+        : {}),
       name,
       ...props,
     })

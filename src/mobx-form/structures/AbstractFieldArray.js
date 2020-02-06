@@ -1,5 +1,3 @@
-class AbstractFieldArray {
-  injectedFields() {}
-}
+class AbstractFieldArray {}
 
 export default AbstractFieldArray
